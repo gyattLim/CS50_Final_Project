@@ -1,0 +1,62 @@
+{% extends "homepage.html" %}
+
+
+{% block div %}
+<!--HTML elements can be assigned multiple classes by listing them side by side with a blank space separating them-->
+<div class="container-fluid" style="height: 800px;max-width:2000px; overflow:scroll">
+  <div class="d-flex justify-content-center">
+  <div class="card text-light bg-transparent " style="max-height: 790px ;width:1000px;">
+   
+        <!--"5" means it takes a ratio of 5/10 of the row-->
+        <div class="col-lg-2">
+            
+        <img src="/static/Profile_pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image"/>
+        </div>
+        <div class="col-lg">
+            
+            
+           <div class="card-body " style="height: 600px" >
+    
+          <h5 class="card-title fs-1">Hobby</h5>
+
+          <div class="row "style="Height:500px">
+            <p class="card-text"> Playing the piano and running are my main hobbies. I also read up on stocks related content during my free time.
+            </p>
+
+            </p>
+        
+           
+        </div>
+        <div class="container">
+        <div class="row "  >
+
+            <div class="col ">
+              <a href="/" class="btn btn-outline-light">Homepage</a>
+            </div>
+
+            <div class="col">
+              <a href="/Introduction" class="btn btn-outline-light">Introduction</a>
+            </div>
+
+            <div class="col ">
+              <a href="/WhatamIdoing" class="btn btn-outline-light">What am I doing</a>
+            </div>
+
+          <div class="col-1 ">
+            <a href="/Diary" class="btn btn-outline-light">Diary</a>
+          </div>
+
+        </div>
+
+
+        </div>
+        </div>
+
+        </div>
+        
+
+    </div>
+    </div>
+</div>
+
+{% endblock %}

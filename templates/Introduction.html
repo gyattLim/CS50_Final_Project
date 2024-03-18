@@ -1,0 +1,67 @@
+{% extends "homepage.html" %}
+
+{% block div %}
+<!--HTML elements can be assigned multiple classes by listing them side by side with a blank space separating them-->
+<div class="container-fluid" style="height: 800px;max-width:2000px; ">
+  <div class="d-flex justify-content-center">
+  <div class="card text-light bg-transparent " style="max-height: 790px ;width:1000px;">
+   
+        <!--"5" means it takes a ratio of 5/10 of the row-->
+        <div class="col-lg-2">
+            
+        <img src="/static/Profile_pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image"/>
+        </div>
+        <div class="col-lg">
+            
+            
+           <div class="container" style="height: 600px" >
+    
+          <h5 class="card-title fs-1 my-2">Introduction</h5>
+
+          <div class="row">
+            <p>Hi there! My name is Darien Lim. Proud to have friends that I can rely on throughout 25 years of my life. I am interested in long term investing through stocks and also looking into alogrithmic trading at the moment.
+            </p>
+            
+        </div>
+
+        <div class="row ">
+          <p>Life's been busy and fulfilling for the past 3 years juggling between my university(NTU) curriculum in Chemical Engineering ,NTU Brazilian Jiu-Jitsu and side hustling over the weekend teaching piano.</p>
+          </div>
+
+          <div class="row" style="height: 385px">
+            <p>Venturing into data analyst role with taking CS50 Harvard X right now and gradually take on the google analytics on cousera.</p>
+            </div>
+
+            <div class="container">
+              <div class="row" >
+
+            <div class="col ">
+              <a href="/" class="btn btn-outline-light">Homepage</a>
+            </div>
+
+            <div class="col">
+              <a href="/Hobby" class="btn btn-outline-light">Hobby</a>
+            </div>
+
+            <div class="col ">
+              <a href="/WhatamIdoing" class="btn btn-outline-light">What am I doing</a>
+            </div>
+
+          <div class="col-1 ">
+            <a href="/Diary" class="btn btn-outline-light">Diary</a>
+          </div>
+
+        </div>
+
+
+        </div>
+        </div>
+
+        </div>
+        
+
+    </div>
+    </div>
+</div>
+
+{% endblock %}

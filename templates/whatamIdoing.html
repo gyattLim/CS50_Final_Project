@@ -1,0 +1,64 @@
+{% extends "homepage.html" %}
+
+
+{% block div %}
+    <!--HTML elements can be assigned multiple classes by listing them side by side with a blank space separating them-->
+    <div class="container-fluid" style="height: 800px;max-width:2000px;">
+      <div class="d-flex justify-content-center">
+      <div class="card text-light bg-transparent " style="max-height: 790px ;width:1000px;">
+       
+            <!--"5" means it takes a ratio of 5/10 of the row-->
+            <div class="col-lg-2">
+                
+            <img src="/static/Profile_pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image"/>
+            </div>
+            <div class="col-lg">
+                
+                
+               <div class="card-body " style="height: 600px" >
+        
+              <h5 class="card-title fs-1">What am I doing now</h5>
+
+              <div class="row "style="Height:500px">
+                <p class="card-text"> I am working towards to be a quant and part-time music composer. I have also a life goal to help the less fortunate later in life. Before I can get there, I would need to be financial secured with passive income which
+                  I hope it could be done through alogrithmic trading and also rental collection from properties.  This shall serve as a reminder to myself that I do not this solely for myself but the greater good of the world as doing something for myself would seem to be a small driving force.
+                </p>
+            
+               
+            </div>
+           
+            <div class="container">
+            <div class="row "  >
+
+                <div class="col ">
+                  <a href="/" class="btn btn-outline-light">Homepage</a>
+                </div>
+
+                <div class="col">
+                  <a href="/Introduction" class="btn btn-outline-light">Introduction</a>
+                </div>
+
+                <div class="col ">
+                  <a href="/Hobby" class="btn btn-outline-light">Hobby</a>
+                </div>
+
+              <div class="col-1 ">
+                <a href="/Diary" class="btn btn-outline-light">Diary</a>
+              </div>
+
+            </div>
+
+
+            </div>
+            
+            </div>
+
+            </div>
+            
+ 
+        </div>
+        </div>
+</div>
+
+
+{% endblock %}

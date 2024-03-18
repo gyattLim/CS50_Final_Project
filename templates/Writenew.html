@@ -1,0 +1,90 @@
+{% extends "homepage.html" %}
+
+
+{% block div %}
+       <!--HTML elements can be assigned multiple classes by listing them side by side with a blank space separating them-->
+      <!--Putting multiple styles on HTML element using ";"-->
+      <div class="container-fluid " style="height: 800px;max-width:2000px;">
+
+        <div class="d-flex justify-content-center  "> <!--Adjust this to align the card to the top of the page (27/4/22), to be continued-->
+    
+            <div class="card text-light bg-transparent align-text-top" style="height: 780px;max-width:1000px">
+    
+                <div class="row align-items-start" style="height: 780px" >
+              
+                     <div class="col-lg-2">
+                        <img src="/static/Profile_pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image"/>
+                    </div>
+    
+                    <div class="col-lg justify-content-center ">
+    
+                         <div class=" card-body " >
+    
+                            <h5 class="row fs-1 justify-content-center">Write New</h5>
+    
+    
+    
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="container ">
+                    <div class="row " style="height: 580px">
+                      <form action="/Writenew" method="post">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">How are you feeling today?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Writenew"></textarea>
+
+                        
+                        <div class="row mx-0" style="width:1000px">
+                        <button class="btn btn-outline-light my-3 " type="submit">Post</button>
+                        </div>
+                        </form>
+
+                      </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="container">
+                <div class="row" >
+    
+              <div class="col d-flex justify-content-start ">
+                <a href="/" class="btn btn-outline-light">Homepage</a>
+              </div>
+    
+              <div class="col">
+                <a href="/Hobby" class="btn btn-outline-light">Hobby</a>
+              </div>
+    
+              <div class="col">
+                <a href="/WhatamIdoing" class="btn btn-outline-light">What am I doing</a>
+              </div>
+    
+              <div class="col d-flex justify-content-center ">
+                <a href="/Diary" class="btn btn-outline-light">Diary</a>
+              </div>
+    
+
+
+            <div class="col  d-flex justify-content-end">
+              <a href="/Introduction" class="btn btn-outline-light">Introduction</a>
+            </div>
+    
+          </div>
+    
+    
+          </div>
+    
+    
+    
+            </div>
+    
+        </div>
+                </div>
+
+       
+    
+    </div>
+    
+    {% endblock %}
